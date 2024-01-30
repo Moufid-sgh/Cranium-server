@@ -1,4 +1,4 @@
-const PORT = process.env.URL || 8000
+
 const express = require('express')
 const app = express()
 const pool = require('./db')
@@ -6,6 +6,8 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const bcrypt = require('bcrypt')
 const { v4: uuidv4 } = require('uuid')
+require("dotenv").config()
+const PORT = process.env.URL || 8000
 
 app.use(bodyParser.json())
 app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
