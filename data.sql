@@ -6,8 +6,8 @@ CREATE TABLE models (
     model_name VARCHAR(255) NOT NULL,
     height INT,
     width INT,
-    model_desc JSON NOT NULL
-    model_image JSON NOT NULL
+    model_desc JSON NOT NULL,
+    model_image JSON NOT NULL,
     date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
